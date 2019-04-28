@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>Scraping With Mongoose</title>
     <style>
-      body { background-color: #F2F6D0 }
+      body { background-color: #E8EAF6 }
       #wrapper {
-        width: 960px;
+        width: 1080px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 5%;
+        padding-left: 8px;
+        background-color: #C5CAE9;
       }
       #articles {
         display: inline-block;
@@ -19,7 +21,8 @@
       }
       #notes {
         float: right;
-        width: 30%;
+        width: 35%;
+        padding-right: 16px;
       }
       textarea, input {
         display: block;
@@ -34,12 +37,16 @@
         height: 200px;
         font-size: 18px;
       }
+      #title {
+        font-size: 48px;
+        text-align: center
+      }
     </style>
   </head>
   <body>
     <div id="wrapper">
-      <h1>Note Scraper</h1>
-      <h2><i>Take notes on these stories!</i></h2>
+      <h1 id='title'>Smashing Magazine Note Scraper</h1>
+      <h2><i>Take notes on the newest Smashing Magazine stories!</i></h2>
       <div id="articles"></div>
       <div id="notes"></div>
     </div>

@@ -54,7 +54,6 @@ app.get("/scrape", function(req, res) {
       result.link = $(this)
       .find('h1.article--post__title a')
       .attr('href');
-      // result.date = date.now()
 
       // Create a new Article using the `result` object built from scraping
       db.Article.create(result)
